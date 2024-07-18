@@ -1,0 +1,5 @@
+<h1><%= @item.name %></h1>
+
+<p><%= @item.description %></p>
+<p>Unit Price: <%= @item.unit_price %></p>
+<p>Merchant:<%= link_to "#{@item.merchant_id}", "/merchants/#{@item.merchant_id}" %></p>

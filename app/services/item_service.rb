@@ -6,4 +6,8 @@ class ItemService
   def items
     conn.get('/api/v1/items')
   end
+
+  def item(id)
+    conn.get("/api/v1/items/#{id}")
+  end
 end

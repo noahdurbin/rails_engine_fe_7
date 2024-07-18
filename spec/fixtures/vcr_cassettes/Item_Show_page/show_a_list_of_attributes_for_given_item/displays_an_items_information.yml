@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:3000/api/v1/merchants/1
+    uri: http://localhost:3000/api/v1/items/4
     body:
       encoding: US-ASCII
       string: ''
@@ -33,20 +33,22 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"bc1fd1230d92d0b6bb211d1985ff7fd3"
+      - W/"ea1d59bea0442421960da290dcded583"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 4c9a8d79-82aa-41f1-a811-a884a71f17d7
+      - 17c0c068-7c44-4b70-a4a0-33f4f705f61e
       X-Runtime:
-      - '0.004487'
+      - '0.006127'
       Server-Timing:
-      - start_processing.action_controller;dur=0.00, sql.active_record;dur=0.10, instantiation.active_record;dur=0.02,
-        process_action.action_controller;dur=0.64
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=1.21, instantiation.active_record;dur=0.03,
+        process_action.action_controller;dur=2.25
       Content-Length:
-      - '77'
+      - '244'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"1","type":"merchant","attributes":{"name":"Schroeder-Jerde"}}}'
-  recorded_at: Thu, 18 Jul 2024 16:04:35 GMT
+      string: '{"data":{"id":"4","type":"item","attributes":{"name":"Item Nemo Facere","description":"Sunt
+        eum id eius magni consequuntur delectus veritatis. Quisquam laborum illo ut
+        ab. Ducimus in est id voluptas autem.","unit_price":42.91,"merchant_id":1}}}'
+  recorded_at: Thu, 18 Jul 2024 15:59:09 GMT
 recorded_with: VCR 6.2.0

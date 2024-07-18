@@ -37,12 +37,12 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 24f90c2a-913a-4d10-ab2c-1026885ee740
+      - f7faf8ce-863c-47bd-926d-83c808f6886e
       X-Runtime:
-      - '0.028785'
+      - '0.005503'
       Server-Timing:
-      - start_processing.action_controller;dur=0.00, sql.active_record;dur=2.66, instantiation.active_record;dur=0.72,
-        process_action.action_controller;dur=10.06
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=0.39, instantiation.active_record;dur=0.14,
+        process_action.action_controller;dur=2.63
       Content-Length:
       - '4036'
     body:
@@ -88,5 +88,5 @@ http_interactions:
         cupiditate reiciendis est commodi non. Atque eveniet sed. Illum excepturi
         praesentium reiciendis voluptatibus eveniet odit perspiciatis. Odio optio
         nisi rerum nihil ut.","unit_price":323.01,"merchant_id":1}}]}'
-  recorded_at: Thu, 18 Jul 2024 15:31:38 GMT
+  recorded_at: Thu, 18 Jul 2024 16:04:35 GMT
 recorded_with: VCR 6.2.0

@@ -11,4 +11,10 @@ class ItemFacade
       Item.new(item)
     end
   end
+
+  def find_item(id)
+    response = @service.item(id)
+    data = JSON.parse(response.body, symbolize_names: true)
+    Item.new(data[:data])
+  end
 end

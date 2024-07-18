@@ -8,4 +8,5 @@ class Item
     @unit_price = data[:attributes][:unit_price]
     @merchant_id = data[:attributes][:merchant_id]
   end
+
 end

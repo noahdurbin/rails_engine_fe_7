@@ -37,12 +37,12 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 456fc31f-9c23-4cd1-b799-2583e6c33c50
+      - 576ccacd-94d7-4cf5-92b0-b26dd202f4b4
       X-Runtime:
-      - '0.242865'
+      - '0.069563'
       Server-Timing:
-      - start_processing.action_controller;dur=0.00, sql.active_record;dur=33.70,
-        instantiation.active_record;dur=7.50, process_action.action_controller;dur=90.58
+      - start_processing.action_controller;dur=0.00, sql.active_record;dur=6.24, instantiation.active_record;dur=4.98,
+        process_action.action_controller;dur=58.92
       Content-Length:
       - '686526'
     body:
@@ -7007,5 +7007,5 @@ http_interactions:
         Qui Veritatis","description":"Totam labore quia harum dicta eum consequatur
         qui. Corporis inventore consequatur. Illum facilis tempora nihil placeat rerum
         sint est. Placeat ut aut. Eligendi perspiciatis unde eum sapiente velit.","unit_price":906.17,"merchant_id":9}}]}'
-  recorded_at: Thu, 18 Jul 2024 01:11:59 GMT
+  recorded_at: Thu, 18 Jul 2024 15:59:09 GMT
 recorded_with: VCR 6.2.0
