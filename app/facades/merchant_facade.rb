@@ -11,4 +11,19 @@ class MerchantFacade
       Merchant.new(merchant)
     end
   end
+
+  def merchant(id)
+    response = @service.merchant(id)
+    data = JSON.parse(response.body, symbolize_names: true)
+    merchant = Merchant.new(data[:data])
+  end
+
+  def merchant_items(id)
+    response = @service.merchant_items(id)
+    data = JSON.parse(response.body, symbolize_names: true)
+    items_array = data[:data]
+    items = items_array.map do |item|
+      Item.new(item)
+    end
+  end
 end

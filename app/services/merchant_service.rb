@@ -6,4 +6,12 @@ class MerchantService
   def merchants
     conn.get('/api/v1/merchants')
   end
+
+  def merchant(id)
+    conn.get("/api/v1/merchants/#{id}")
+  end
+
+  def merchant_items(id)
+    conn.get("/api/v1/merchants/#{id}/items")
+  end
 end
