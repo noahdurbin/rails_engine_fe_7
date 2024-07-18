@@ -7,7 +7,7 @@ class ItemFacade
     response = @service.items
     data = JSON.parse(response.body, symbolize_names: true)
     items_array = data[:data]
-    items = items_array.map do |item|
+    items_array.map do |item|
       Item.new(item)
     end
   end
