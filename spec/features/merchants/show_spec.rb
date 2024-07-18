@@ -6,7 +6,6 @@ RSpec.describe 'Merchants Show', type: :feature do
       visit '/merchants/1'
 
       expect(page).to have_content("Schroeder-Jerde")
-      save_and_open_page
     end
   end
 end
